@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Hoffman</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      background-color: white;
+    }
+    body {
+      margin: 0;
+      width: 400px;
+      
+      background-color: whitesmoke;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+    }
+    div.title {
+      text-align: center;
+      width: 100%;
+      padding: 40px 0 28px 0;
+    }
+    div.title h1 {
+      font-size: 40px;
+      width: 100%;
+      padding: 4px;
+      margin: 0;
+    }
+    div.title p {
+      font-size: 20px;
+      text-decoration: underline;
+      padding: 2px;
+      margin: 0;
+    }
+    div.title p:hover {
+      cursor: pointer;
+    }
+    div.settings {
+      padding: 0 18px 18px 18px;
+    }
+    div.settings p {
+      font-size: 18px;
+      margin: 0;
+      padding: 10px 0;
+    }
+    div.settings .alts {
+      display: flex;
+      justify-content: space-between;
+      gap: 4px;
+    }
+    div.settings .alternative {
+      padding: 4px 8px;
+      border-radius: 8px;
+      border: 1px solid gray;
+      display: inline-block;
+      cursor: pointer;
+      color: gray; 
+      font-size: 16px;
+      flex-grow: 1;
+      text-align: center;
+      
+    }
+    div.settings .selected {
+      border: 1px solid black;
+      font-weight: bold;
+      color: black;
+    }
+    div.settings .alternative:hover {
+      box-shadow: 0px 0px 1px 1px rgba(117,117,117,0.75);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h1 id="heading">One Tab Only</h1>
+    <p id="status">Disable</p>
+  </div>
+  <div class="settings">
+    <p>Open new tabs in:</p>
+    <div class="alts">
+      <span id="ask" class="alternative selected">Ask every time</span>
+      <span id="currentTab" class="alternative">Current tab</span>
+      <span id="newWindow" class="alternative">New window</span>
+    </div>
+    
+    
+  </div>
+  <script src="popup-script.js"></script>
+</body>
+</html>
