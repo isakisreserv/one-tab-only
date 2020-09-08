@@ -41,12 +41,12 @@ function updateText() {
         document.getElementById("status").innerText = "Inactivate";
         document.getElementById("heading").style.color = "green";
         document.getElementsByClassName("settings")[0].style.filter = "none";
-        chrome.browserAction.setIcon({path: "test 3.png"});
+        chrome.browserAction.setIcon({path: "icon.png"});
     } else {
         document.getElementById("status").innerText = "Activate";
         document.getElementById("heading").style.color = "gray";
         document.getElementsByClassName("settings")[0].style.filter = "blur(4px)";
-        chrome.browserAction.setIcon({path: "test 4.png"});
+        chrome.browserAction.setIcon({path: "icon disabled.png"});
     }
 }
 
